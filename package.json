@@ -1,0 +1,19 @@
+{
+  "name": "streakr",
+  "version": "0.1.0",
+  "description": "CLI habit tracker with streak counting",
+  "type": "module",
+  "main": "src/index.ts",
+  "bin": {
+    "streakr": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "bun build src/cli.ts --outdir dist --target node",
+    "dev": "bun run src/cli.ts",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  }
+}
